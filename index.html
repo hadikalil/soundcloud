@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="body-wrapper">
   <div class="container">
     <header>
       <h1>Really Awesome Music Site</h1>
@@ -13,12 +14,18 @@
       <audio class="music-player" controls="controls" src=""></audio>
     </section>
     <section class="search">
-      <form class="search-form">
-        
-      </form>
+
+        <input class="trackInput">
+        </input>
+
+      <div >
+        <button id="submitButton" type="button"     name="button">SUBMIT</button>
+
+      </div>
     </section>
-    <section class="results"></section>
+    <section id="bands" class="results"></section>
   </div>
+</div>
   <script src="main.js"></script>
 </body>
 </html>
