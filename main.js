@@ -24,16 +24,16 @@ let usersApi = 'https://api.soundcloud.com/users/?client_id=86b6a66bb2d863f5d64d
       }
 
     response.json().then(function(data){
-      let tracks = data.results;
+      let tracks = data.tracks;
       console.log(tracks);
 
       for (var i = 0; i < 15; i++) {
-    let tracks = data.results[i];
+    let tracks = data.tracks[i];
 
     let markup =
     `<div class="tracks">
-        <img rc=${data.results[i].avatar_url}></img>
-        <p>${data.results[i].username}</p>
+        <img rc=${data.tracks[i].title}></img>
+        <p>${data.tracks[i].title}</p>
      </div>`
      document.getElementById('profiles').innerHTML += markup;
 }})})};
