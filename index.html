@@ -5,27 +5,33 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="body-wrapper">
+
   <div class="container">
-    <header>
-      <h1>Really Awesome Music Site</h1>
-    </header>
-    <section class="player">
-      <audio class="music-player" controls="controls" src=""></audio>
-    </section>
-    <section class="search">
 
-        <input class="trackInput">
-        </input>
 
-      <div >
-        <button id="submitButton" type="button"     name="button">SUBMIT</button>
-
+      <div class="headerText"><h1><span>NimboStratus</span>Noise</h1></div>
+       <header id="header">
+        <div class="headerImageBox">
+        <img class="headerimage1" alt="">
+        <img class="headerimage2" alt="">
+        <img class="headerimage3" alt="">
+        <img class="headerimage4" alt="">
       </div>
+    </header>
+
+    <section class="player">
+      <audio class="musicPlayer" controls="controls" src=""></audio>
     </section>
-    <section id="bands" class="results"></section>
+
+    <section class="search">
+        <input type="text" id="trackInput">
+        <button type="submit" id="submitButton"name="button">SUBMIT</button>
+    </section>
+    <div class="results">
+    <section id="bands"></section>
   </div>
-</div>
+  </div>
+
   <script src="main.js"></script>
 </body>
 </html>
