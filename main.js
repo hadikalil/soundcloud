@@ -31,18 +31,41 @@ function searchTracks() {
             console.log(track);
 
 
+
+              let searchedFor = document.createElement('div');
+
+              searchedFor.id = 'searchedFor';
+              document.body.appendChild(searchedFor);
+               document.getElementById('searched').appendChild(searchedFor);
+              searchedFor.className = 'searchedFor';
+              searchedFor.innerHTML += "showing results for" +": "+ searchResults;
+
+
+
             function renderTracks() {
               return `
+              <audio class="trackToPlay"></audio>
               ${track.map(track =>
               `<div class="box">
               <div class="blankImage"></div>
-              <div><img src="${track.artwork_url}"></img></div>
-              <div class="title"><p>${track.title}</p></div>
+              <div src="${track.stream_url}"></div>
+              <button id="albumBtn" class="albumButton"><img src="${track.artwork_url}"></img>
+              <div id="songTitle" class="title">${track.title}</div></button>
               </div>`
               )}
               `
+              // let audioPlayer = document.createElement('audio');
+              // let audioButton = document.getElementsByClassName('albumButton');
+              // console.log(audioPlayer);
+              // console.log(audioButton);
+              // audioButton.addEventListener('click', function(){
+              //   document.body.appendChild(audioPlayer);
+              //   document.getElementById('player1').appendChild(audioPlayer);
+              //
+              // })
 
-                console.log(renderTracks());
+
+
             }
 
             let markup = `${renderTracks()}`;
