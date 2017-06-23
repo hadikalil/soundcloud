@@ -18,6 +18,13 @@ a {
   font-size: 15px;
 }
 
+audio::-webkit-media-controls-play-button {
+  font-family: monospace;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #60d9f1;
+}
+
 audio::-webkit-media-controls-time-remaining-display {
   font-family: monospace;
   color: black;
@@ -132,8 +139,8 @@ h1 {
   font-family: serif;
   font-weight: bold;
   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: #60d9f1;
-  color: white;
+   -webkit-text-stroke-color: black;
+  color: #60d9f1;
   font-size: 5.5vw;
 }
 
@@ -154,6 +161,9 @@ h1 div{
 
 .noise:hover  {
   font-size: 7vw;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: #60d9f1;
 }
 
 h1 div:hover{
