@@ -27,16 +27,17 @@ function searchTracks() {
             console.log(track);
 
 
-
-              let searchedFor = document.createElement('div');
-
+              ////////////////////////////////////////////////////////////////////////
+              let searchedFor = document.createElement('div');                    
               searchedFor.id = 'searchedFor';
-              document.body.appendChild(searchedFor);
-               document.getElementById('searched').appendChild(searchedFor);
               searchedFor.className = 'searchedFor';
+
+
+           //   document.body.appendChild(searchedFor);
+              document.getElementById('searched').appendChild(searchedFor);
               searchedFor.innerHTML = "Recent Searches" +": "+ searchResults;
 
-
+            //////////////////////////////////////////////////////////////////////////
 
               var clientId = "/?client_id=86b6a66bb2d863f5d64dd8a91cd8de94";
             function renderTracks() {
